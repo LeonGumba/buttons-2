@@ -8,9 +8,8 @@
   </head>
 
   <style>
-    .button {
+    #box1 {
       color: white;
-      float: left;
       background-color: #030a1d;
       height: 90px;
       width: 249px;
@@ -22,6 +21,22 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    #box2 {
+      color: white;
+      background-color: #030a1d;
+      height: 90px;
+      width: 249px;
+      border: 5px;
+      border-color: #030a1d;
+      border-radius: 18px;
+      font-family: Poppins;
+      font-size: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
     }
 
     a:link {
@@ -92,17 +107,25 @@
   </style>
 
   <body>
-    <section class="button">
-      <div class="button">
-        <a href="#" id="button" class="button"
-          ><img
-            src="https://168.119.170.129/wp-content/uploads/2022/08/IconlyBulkPlus.png"
-            alt="plus symbol"
-          />
-          Stake NFT</a
-        >
-      </div>
-    </section>
+    <div id="box1">
+      <a href="#" id="box1" class="button"
+        ><img
+          src="https://168.119.170.129/wp-content/uploads/2022/08/IconlyBulkPlus.png"
+          alt="plus symbol"
+        />
+        Stake NFT</a
+      >
+    </div>
+
+    <div id="box2">
+      <a href="#" id="box2" class="button"
+        ><img
+          src="https://168.119.170.129/wp-content/uploads/2022/08/IconlyBulkPlus.png"
+          alt="plus symbol"
+        />
+        Stake NFT</a
+      >
+    </div>
   </body>
 
   <!--modal section-->
@@ -117,7 +140,7 @@
   <!--script for a pop-up message-->
 
   <script>
-    document.getElementById("button").addEventListener("click", function () {
+    document.getElementById("box1").addEventListener("click", function () {
       document.querySelector(".bg-modal").style.display = "flex";
     });
 
