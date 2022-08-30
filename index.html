@@ -4,107 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Buttons</title>
+    <title>NFT Marketplace</title>
+
+    <style>
+      #box1 {
+        color: white;
+        background-color: #030a1d;
+        height: 90px;
+        width: 249px;
+        border: 5px;
+        border-color: #030a1d;
+        border-radius: 18px;
+        font-family: Poppins;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .marketplace {
+        width: 249px;
+        height: 179px;
+        color: #00a2fd;
+        background-color: #030a1d;
+        border: 5px;
+        border-radius: 18px;
+        border-color: #030a1d;
+        font-family: Poppins;
+        font-size: 22px;
+      }
+
+      .market {
+        margin-left: 20px;
+        padding-top: 15px;
+        font-size: 17px;
+      }
+
+      .filter {
+        width: 249px;
+        height: 295px;
+        color: #00a2fd;
+        background-color: #030a1d;
+        border: 5px;
+        border-radius: 18px;
+        border-color: #030a1d;
+        font-family: Poppins;
+        font-size: 22px;
+      }
+
+      #marketplace-button,
+      #stats-button {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      #resource-button {
+        margin-left: 20px;
+      }
+
+      #status-button,
+      #price-button,
+      #collection-button,
+      #chains-button,
+      #categories-button {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      #onsale-button {
+        margin-left: 20px;
+      }
+
+      a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      a:active {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      .bg-modal {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+
+      .modal-content {
+        width: 249px;
+        height: 90px;
+        background-color: #030a1d;
+        color: white;
+        font-family: Poppins;
+        border: 5px;
+        border-radius: 18px;
+        text-align: center;
+        position: relative;
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .close {
+        position: absolute;
+        top: 0;
+        right: 14px;
+        font-size: 42px;
+        transform: rotate(45deg);
+        cursor: pointer;
+        color: #00a2fd;
+      }
+
+      .close:hover {
+        color: rgb(245, 10, 214);
+      }
+    </style>
   </head>
-
-  <style>
-    #box1 {
-      color: white;
-      background-color: #030a1d;
-      height: 90px;
-      width: 249px;
-      border: 5px;
-      border-color: #030a1d;
-      border-radius: 18px;
-      font-family: Poppins;
-      font-size: 22px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    #box2 {
-      color: white;
-      background-color: #030a1d;
-      height: 90px;
-      width: 249px;
-      border: 5px;
-      border-color: #030a1d;
-      border-radius: 18px;
-      font-family: Poppins;
-      font-size: 22px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-    }
-
-    a:link {
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:active {
-      color: white;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    .bg-modal {
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      position: absolute;
-      top: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      display: none;
-    }
-
-    .modal-content {
-      width: 249px;
-      height: 90px;
-      background-color: #030a1d;
-      color: white;
-      font-family: Poppins;
-      border: 5px;
-      border-radius: 18px;
-      text-align: center;
-      position: relative;
-      font-size: 22px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .close {
-      position: absolute;
-      top: 0;
-      right: 14px;
-      font-size: 42px;
-      transform: rotate(45deg);
-      cursor: pointer;
-      color: #00a2fd;
-    }
-
-    .close:hover {
-      color: rgb(245, 10, 214);
-    }
-  </style>
 
   <body>
     <div id="box1">
@@ -117,35 +154,204 @@
       >
     </div>
 
-    <div id="box2">
-      <a href="#" id="box2" class="button"
-        ><img
-          src="https://168.119.170.129/wp-content/uploads/2022/08/IconlyBulkPlus.png"
-          alt="plus symbol"
-        />
-        Stake NFT</a
-      >
+    <section class="marketplace">
+      <p class="market">MARKET PLACE</p>
+      <div id="marketplace-button">
+        <a href="#" id="button-1" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/marketplace-icon.png"
+            alt="marketplace icon"
+          />
+          Marketplace</a
+        >
+      </div>
+      <div id="stats-button">
+        <a href="#" id="button-2" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/stats-icon.png"
+            alt="stats icon"
+          />
+          Stats</a
+        >
+      </div>
+      <div id="resource-button">
+        <a href="#" id="button-3" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/resources-icon.png"
+            alt="resource icon"
+          />
+          Resource</a
+        >
+      </div>
+    </section>
+
+    <section class="filter">
+      <p class="market">FILTER</p>
+      <div id="status-button">
+        <a href="#" id="button-4" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/status-icon.png"
+            alt="status icon"
+          />
+          Status</a
+        >
+      </div>
+      <div id="price-button">
+        <a href="#" id="button-5" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/price-icon.png"
+            alt="price icon"
+          />
+          Price</a
+        >
+      </div>
+      <div id="collection-button">
+        <a href="#" id="button-6" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/collection-icon.png"
+            alt="collection icon"
+          />
+          Collection</a
+        >
+      </div>
+      <div id="chains-button">
+        <a href="#" id="button-7" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/chains-icon.png"
+            alt="chains icon"
+          />
+          Chains</a
+        >
+      </div>
+      <div id="categories-button">
+        <a href="#" id="button-8" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/category-icon.png"
+            alt="categories icon"
+          />
+          Categories</a
+        >
+      </div>
+      <div id="onsale-button">
+        <a href="#" id="button-9" class="button">
+          <img
+            src="https://168.119.170.129/wp-content/uploads/2022/08/onsalein-icon.png"
+            alt="on sale icon"
+          />
+          On Sale</a
+        >
+      </div>
+    </section>
+
+    <!--modal section-->
+
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <p>Coming soon</p>
+      </div>
     </div>
+
+    <!--script for a pop-up message-->
+
+    <script>
+      document.getElementById("box1").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "flex";
+      });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-1")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-2")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-3")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-4")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-5")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-6")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-7")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-8")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+
+      document
+        .getElementById("button-9")
+        .addEventListener("click", function () {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+    </script>
   </body>
-
-  <!--modal section-->
-
-  <div class="bg-modal">
-    <div class="modal-content">
-      <div class="close">+</div>
-      <p>Coming soon</p>
-    </div>
-  </div>
-
-  <!--script for a pop-up message-->
-
-  <script>
-    document.getElementById("box1").addEventListener("click", function () {
-      document.querySelector(".bg-modal").style.display = "flex";
-    });
-
-    document.querySelector(".close").addEventListener("click", function () {
-      document.querySelector(".bg-modal").style.display = "none";
-    });
-  </script>
 </html>
